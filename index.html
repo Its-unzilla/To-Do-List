@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To-Do List App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="top-bar">
+      <h1>📝 My To-Do</h1>
+      <button id="toggleTheme" title="Toggle Theme">🌙</button>
+    </div>
+
+    <div class="input-group">
+      <input type="text" id="taskInput" placeholder="What's on your mind?" />
+      <button onclick="addTask()">➕</button>
+    </div>
+
+    <ul id="taskList"></ul>
+
+    <div class="bottom-bar">
+      <button onclick="clearAll()">🗑️ Clear All</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
